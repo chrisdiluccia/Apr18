@@ -18,24 +18,54 @@
 	if (self) {
 		tree =
         BEGIN @"iPhone",
-        BEGIN @"Settings",
-        BEGIN @"Bluetooth"
-        END,
-        BEGIN @"General"
-        END,
-        BEGIN @"Privacy"
-        END,
-        BEGIN @"Maps"
-        END,
-        BEGIN @"Safari"
-        END,
-        BEGIN @"Photos & Camera"
-        END,
-        BEGIN @"Twitter"
-        END,
-        BEGIN @"Facebook"
-        END
-        END
+            BEGIN @"Settings",
+                BEGIN @"Bluetooth",
+                    BEGIN @"Bluetooth"
+                    END
+                END,
+                BEGIN @"General",
+                    BEGIN @"About"
+                    END,
+                    BEGIN @"Software Update"
+                    END,
+                    BEGIN @"Usage"
+                    END
+                END,
+                BEGIN @"Privacy",
+                    BEGIN @"Location Services"
+                    END,
+                    BEGIN @"Contacts"
+                    END,
+                    BEGIN @"Calendars"
+                    END
+                END,
+                BEGIN @"Maps",
+                    BEGIN @"In Miles"
+                    END,
+                    BEGIN @"In Kilometers"
+                    END
+                END,
+                BEGIN @"Safari",
+                    BEGIN @"Search Engine"
+                    END,
+                    BEGIN @"AutoFill"
+                    END,
+                    BEGIN @"Open Links"
+                    END
+                END,
+                BEGIN @"Photos & Camera",
+                    BEGIN @"My Photo Stream"
+                    END
+                END,
+                BEGIN @"Twitter",
+                    BEGIN @"Add Account"
+                    END
+                END,
+                BEGIN @"Facebook",
+                    BEGIN @"Settings"
+                    END
+                END
+            END
         END;
     }
     
